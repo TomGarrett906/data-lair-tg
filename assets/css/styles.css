@@ -4,7 +4,6 @@ body,
 html {
     font-family: 'Poppins', sans-serif;
     background: rgb(32, 32, 32);
-    /* background-color: rgb(32, 32, 32); */
 }
 
 img {
@@ -78,15 +77,14 @@ li:last-child .dropdown-item {
 .navbar-brand span:hover {    
     color: white;
     scale: 130%;
-    transition: 1000ms;
-    rotate: 360deg;
+    transition: 1.5s;
 }
 
 
 .navbar-brand:hover {
     color: #80000d;
     scale: 130%;
-    transition: 1000ms;
+    transition: 2s;
     rotate: 360deg;
 }
 
@@ -121,6 +119,12 @@ header .navbar-expand-lg .navbar-nav {
     transition: 1000ms;
     scale: 105%;
 }
+
+/* .login-btn:hover {
+    color: black;
+    background-color: #fff;
+} */
+
 /* Regular */
 .btn-danger {
     border-color: #dc3545;
@@ -174,15 +178,18 @@ header .navbar-expand-lg .navbar-nav {
 /* Header */
 header.fixed-top {
     background-color: #000000;
-    border-bottom: 5px white ridge;
+    /* border-bottom: 1px white ridge; */
+    box-shadow: 0 4px 20px 0 #dc3545;
 }
-
 /* Header CSS End */
 
 /* Hero Banner Start */
 .hero-banner {
+    align-content: center;
     background-color: #4d000864;
+    justify-content: center;
     padding: 120px 0 35px;
+    height: 100vh;
 }
 
 .hero-banner h2 {
@@ -199,13 +206,28 @@ header.fixed-top {
     margin-bottom: 37px;
 }
 
+.hero-banner img {
+    border-radius: 50%;
+    transition: 2s;
+    border: 1px #fff solid;
+}
+
+.hero-banner img:hover {
+    scale: 115%;
+    box-shadow: 0 4px 20px 0 #dc3545;
+    border-radius: 50%;
+    transition: 2s;
+    border: 3px #dc3545 solid;
+}
+
 .hero-banner a {
     padding: 20px 30px;
     line-height: 1;
 }
 
 .social-logos {
-    background-color: rgb(32, 32, 32);
+    background: linear-gradient(to bottom, #00a70300, rgb(32, 32, 32),  #00a70300);
+    margin-top: 30px;
     padding: 44px 0;
 }
 
@@ -216,8 +238,10 @@ header.fixed-top {
 
 .social-logos img:hover {
     box-shadow: 0 4px 20px 0 #fff;
-    transition: 700ms;
+    transition: 300ms;
     scale: 110%;
+    border-radius: 1rem;
+    border: 1px #fff solid;
 }
 
 
@@ -226,6 +250,8 @@ header.fixed-top {
 /* What We Do Start */
 .what-we-do {
     padding: 65px 0;
+    height: 120vh;
+    padding-top: 150px;
 }
 
 .sub-heading{
@@ -301,13 +327,14 @@ header.fixed-top {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     /* background-color: rgb(32, 32, 32); */
     color: white;
 }
 
 #devin {
-    /* background-color: #0004ff19; */
+    /* margin-top: 200px;
+    padding-top: 200px; */
     background: linear-gradient(to bottom, rgb(32, 32, 32), #0004ff23);
 }
 
@@ -359,8 +386,71 @@ header.fixed-top {
 .team-info li {
     margin-bottom: 10px;
 }
-
-
 /* Our Team End */
 
 
+/* Footer Start */
+.site-footer {
+    padding: 75px 0 30px;
+    background-color: #000000;
+    box-shadow: 0 4px 35px 0 #dc3545;
+}
+
+.site-footer h2 {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.site-footer h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-footer .social-icons {
+    margin-top: 20px;
+    column-gap: 15px;
+}
+
+.site-footer .social-icons li a {
+    height: 41px;
+    width: 41px;
+    border-radius: 41px;
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 17px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-footer .social-icons li a i {
+    line-height: 1;
+}
+
+.site-footer h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 25px
+}
+
+.site-footer .footer-menu {
+    row-gap: 25px;
+}
+
+.site-footer .footer-menu li a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-footer .copyright {
+    margin: 70px 0 0;
+}
+
+/* Footer End */
